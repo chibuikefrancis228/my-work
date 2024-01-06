@@ -105,6 +105,7 @@ a:hover {
   max-height: 0;
   overflow: hidden;
   transition: all 0.3 ease-in-out;
+  z-index: 1;
 }
 
 .menu-links a {
@@ -302,7 +303,7 @@ section {
 .details-container {
   padding: 1.5rem;
   flex: 1;
-  background: rgb(145, 134, 134);
+  background: rgb(30, 19, 68);
   border-radius: 2rem;
   border: rgb(53, 53, 53) 0.1rem solid;
   border-color: rgb(163, 163, 163);
@@ -327,7 +328,7 @@ section {
 }
 
 .details-container h3{
-  color: rgb(73, 24, 138);
+  color: white;
 }
 
 .experience-sub-title {
