@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Francis</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Francis</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container" data-aos="fade-right" data-aos-duration="3000">
+        <img src="/assets/20220802-074646.png"  alt="" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1" data-aos="fade-left" data-aos-duration="3000">Hello, I'm</p>
+        <h1 class="title" data-aos="fade-left" data-aos-duration="3000">Francis</h1>
+        <p class="section__text__p2" data-aos="fade-left" data-aos-duration="3000">Frontend Developer</p>
+        <div class="btn-container" data-aos="fade-up" data-aos-duration="3000">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/resume-example.pdf')"
+          >
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container" data-aos="fade-up" data-aos-duration="3000">
+          <img
+            src="./assets/linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="location.href='https://linkedin.com/'"
+          />
+          <img
+            src="./assets/github.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="location.href='https://github.com/'"
+          />
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <p class="section__text__p1" data-aos="fade-up" data-aos-duration="3000">Get To Know More</p>
+      <h1 class="title" data-aos="fade-up" data-aos-duration="3000">About Me</h1>
+      <div class="section-container">
+
+        <div class="about-details-container">
+          <div class="about-containers" data-aos="fade-up" data-aos-duration="3000">
+            <div class="details-container">
+              <img
+              src="./assets/icons8_verified_badge.ico"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3>Experience</h3>
+              <p>2+ years <br />Frontend Development</p>
+            </div>
+            <div class="details-container">
+              <img
+                src="./assets/icons8_person.ico"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Education</h3>
+              <p>B.Sc. Bachelors Degree<br />M.Sc. Masters Degree</p>
+            </div>
+          </div>
+          <div class="text-container" data-aos="fade-up" data-aos-duration="3000">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic quis
+              reprehenderit et laborum, rem, dolore eum quod voluptate
+              exercitationem nobis, nihil esse debitis maxime facere minus sint
+              delectus velit in eos quo officiis explicabo deleniti dignissimos.
+              Eligendi illum libero dolorum cum laboriosam corrupti quidem,
+              reiciendis ea magnam? Nulla, impedit fuga!
+            </p>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#experience'"
+      />
+    </section>
+    <section id="experience">
+      <p class="section__text__p1" data-aos="fade-up" data-aos-duration="3000">Explore My</p>
+      <h1 class="title" data-aos="fade-up" data-aos-duration="3000">Experience</h1>
+      <div class="experience-details-container">
+        <div class="about-containers" data-aos="fade-up" data-aos-duration="3000">
+          <div class="details-container">
+            <h2 class="experience-sub-title">Frontend Development</h2>
+            <div class="article-container" >
+              <article>
+                <img
+                  src="./assets/icons8_html_5.ico"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>HTML</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                src="./assets/icons8_css.ico"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>CSS</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                src="./assets/icons8_react_native.ico"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>React native</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                src="./assets/icons8_javascript.ico"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>JavaScript</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <img
+                src="./assets/icons8_react.ico"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>React</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <img
+                src="./assets/icons8_bootstrap.ico"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Bootstrap</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Back-end Development</h2>
+            <div class="article-container">
+              <article>
+                <img
+                src="./assets/icons8_mongodb.ico"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Mongodb</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <img
+                src="./assets/icons8_nodejs.ico"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Node JS</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                src="./assets/icons8_python.ico"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Python</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                src="./assets/icons8_github.ico"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Github</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#projects'"
+      />
+    </section>
+    <section id="projects">
+      <p class="section__text__p1" data-aos="fade-up" data-aos-duration="3000">Browse My Recent</p>
+      <h1 class="title" data-aos="fade-up" data-aos-duration="3000">Projects</h1>
+      <div class="experience-details-container" >
+        
+        
+        <div class="about-containers">
+          <div class="details-container color-container" data-aos="fade-up" data-aos-duration="3000">
+            <div class="article-container">
+              <video width="108%" height="70%" autoplay muted>
+                <source src="./assets/scrnli_1_5_2024_5-15-16 AM (1).webm">
+              </video>
+            </div>
+            <h2 class="experience-sub-title project-title">Hotel Reservation system using Reactjs and nodejs</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+
+          <div class="details-container color-container" data-aos="fade-up" data-aos-duration="3000">
+            <div class="article-container" >
+              <img
+                src="./assets/phone.png"
+                alt="Project 1"
+                class="project-img"
+              />
+              <div class="screen">
+                <img src="./assets/scrnli_1_3_2024_2-34-36 PM.png" class="photo" alt="">
+              </div>
+            </div>
+            <h2 class="contents">movie-app using ionic </h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+
+          <div class="details-container color-container" data-aos="fade-up" data-aos-duration="3000">
+            <div class="article-container">
+
+              <video width="108%" height="70%" autoplay muted>
+                <source src="./assets/scrnli_1_4_2024_12-15-41 PM.webm">
+              </video>
+            </div>
+            <h2 class="contents">E-commerce website using React and nodejs</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+
+          <div class="details-container color-container" data-aos="fade-up" data-aos-duration="3000">
+            <div class="article-container">
+
+              <div class="screen1">
+                <img src="./assets/scrnli_1_5_2024_8-06-01 AM.png" class="photo1" alt="">
+              </div>
+            </div>
+            <h2 class="contents">TODO-LIST using HTML, CSS and JavaScript</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+
+          <div class="details-container color-container" data-aos="fade-up" data-aos-duration="3000">
+            <div class="article-container">
+
+              <div class="screen1">
+                <img src="./assets/001.PNG" class="photo1" alt="">
+              </div>
+            </div>
+            <h2 class="contents">Security-System using nodejs and Mongodb</h2>
+            <h1 class="contents"></h1>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+
+          <div class="details-container color-container" data-aos="fade-up" data-aos-duration="3000">
+            <div class="article-container">
+
+              <video width="108%" height="300%" autoplay muted>
+                <source src="./assets/scrnli_1_4_2024_3-00-59 PM.webm">
+              </video>
+            </div>
+            <h2 class="contents">E-commerce website using HTML, CSS and JavaScript</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#contact'"
+      />
+    </section>
+    <section id="contact">
+      <p class="section__text__p1" data-aos="fade-up" data-aos-duration="3000">Get in Touch</p>
+      <h1 class="title" data-aos="fade-up" data-aos-duration="3000">Contact Me</h1>
+      <div class="box" data-aos="fade-up" data-aos-duration="3000">
+        <div class="contanct-wrapper" >
+            <form>
+                <input type="text" name="name" placeholder="Name"><br>
+                <input type="email" name="email" placeholder="Email"><br>
+                <textarea name="message"  placeholder="Your Message"></textarea><br>
+                <button data-aos="fade-up" data-aos-duration="3000">Send Message</button>
+            </form>
+            <div data-aos="fade-up" class="social">
+                
+            </div>
+            <div data-aos="fade-up" class="social-img">
+                <img src="/img/icons8_whatsapp_48.png" alt="">
+                <img src="/img/icons8_instagram_48.png" alt="">
+                <img src="/img/icons8_twitter_48.png" alt="">
+                <img src="./img/icons8_telegram_app_48.png" alt="">
+            </div>
+        </div>
+    </div>
+    </section>
+    <footer>
+      
+      <div class="foot">
+        <p>Copyright &#169; 2023 Francis. All Rights Reserved.</p>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>
