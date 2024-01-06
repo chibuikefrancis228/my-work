@@ -245,12 +245,12 @@ section {
 
 .btn-color-1,
 .btn-color-2:hover {
-  background: rgb(53, 50, 50);
+  background: rgb(19, 18, 18);
   color: white;
 }
 
 .btn-color-1:hover {
-  background: rgb(90, 87, 87);
+  background: rgb(22, 21, 21);
 }
 
 .btn-color-2 {
@@ -267,7 +267,9 @@ section {
 .btn-container {
   gap: 1rem;
 }
-
+spav{
+  color: white;
+}
 /* ABOUT SECTION */
 
 #about {
